@@ -1,0 +1,15 @@
+{
+  "originHash" : "a4f704df6221fb0681cc1f554b9beb95d837ccdfc573dff4cffb85f6546aeda2",
+  "pins" : [
+    {
+      "identity" : "brochurewidgetsdkios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://gitlab.offerista.com/OfferistaSDK/BrochureWidgetSDKiOS.git",
+      "state" : {
+        "revision" : "bba01ccc42d931304cef42d7968149dff73e6554",
+        "version" : "7.0.0"
+      }
+    }
+  ],
+  "version" : 3
+}

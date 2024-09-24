@@ -12,6 +12,7 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		188FF7E62CA298840085EA07 /* OfferistaBrochureWidget in Frameworks */ = {isa = PBXBuildFile; productRef = 188FF7E52CA298840085EA07 /* OfferistaBrochureWidget */; };
 		60EE97F3804CC328CF8BF67F /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 1332EA05689DF123AD2E0783 /* PrivacyInfo.xcprivacy */; };
 		7699B88040F8A987B510C191 /* libPods-RandomNamesApp-RandomNamesAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-RandomNamesApp-RandomNamesAppTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
@@ -68,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				188FF7E62CA298840085EA07 /* OfferistaBrochureWidget in Frameworks */,
 				0C80B921A6F3F58F76C31292 /* libPods-RandomNamesApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -238,6 +240,9 @@
 				Base,
 			);
 			mainGroup = 83CBB9F61A601CBA00E9B192;
+			packageReferences = (
+				188FF7E42CA298840085EA07 /* XCRemoteSwiftPackageReference "BrochureWidgetSDKiOS" */,
+			);
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -730,6 +735,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		188FF7E42CA298840085EA07 /* XCRemoteSwiftPackageReference "BrochureWidgetSDKiOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://gitlab.offerista.com/OfferistaSDK/BrochureWidgetSDKiOS.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		188FF7E52CA298840085EA07 /* OfferistaBrochureWidget */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 188FF7E42CA298840085EA07 /* XCRemoteSwiftPackageReference "BrochureWidgetSDKiOS" */;
+			productName = OfferistaBrochureWidget;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
 }

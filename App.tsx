@@ -17,16 +17,7 @@ function App(): React.JSX.Element {
   return (
     <SafeAreaView
       style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-      <View style={styles.wrapper}>
-        <Text
-          style={{
-            fontSize: 50,
-            color: 'red',
-          }}>
-          {currentName}
-        </Text>
-        <Button title="Change Name" onPress={handleChangeName} />
-      </View>
+      
       <TextSettingsView 
         style={ styles.wrapper } 
         /> 
@@ -39,7 +30,7 @@ const styles = StyleSheet.create({
    width:Dimensions.get('window').width-20,
    alignItems:"center",
    justifyContent:"center",
-   height:200,
+   height:Dimensions.get('window').height-20,
    backgroundColor:"#fff"
   },
   sectionTitle: {
