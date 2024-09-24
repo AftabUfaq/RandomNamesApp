@@ -6,3 +6,14 @@
 //
 
 import Foundation
+@objc(TextSettingsViewManager)
+class TextSettingsViewManager: RCTViewManager {
+
+  override class func requiresMainQueueSetup() -> Bool {
+    return true
+  }
+
+  override func view() -> UIView! {
+    TextSettingsHostingView()
+  }
+}

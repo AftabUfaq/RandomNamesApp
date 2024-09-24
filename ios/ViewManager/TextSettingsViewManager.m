@@ -5,7 +5,12 @@
 //  Created by Apple on 24/09/2024.
 //
 
-#include <metal_stdlib>
-using namespace metal;
+#import "React/RCTViewManager.h"
+
+@interface
+
+RCT_EXTERN_MODULE(TextSettingsViewManager, RCTViewManager)
+
+@end
 
 
